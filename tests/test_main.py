@@ -6,4 +6,4 @@ def test_health():
     resp = client.get("/health")
     assert resp.status_code == 200
     data = json.loads(resp.data)
-    assert data.get("status") == "ok"
+    assert data.get("status")== "ok"
